@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.pointer{
+    cursor: pointer;
+}
+
+.primary_btn{
+    background: #232f3e;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.text_btn{
+    background: none;
+    border: none;
+    color: #232f3e;
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+}

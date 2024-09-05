@@ -1,0 +1,19 @@
+<div class="categories">
+    <div class="container">
+        <div class="row">
+          @if(categories.length > 0){
+            @for (item of categories; track item.id) {
+              <div class="col-sm-3">
+                <div class="category_card" [routerLink]="['/product-list', item.id]">
+                  <img src="https://m.media-amazon.com/images/I/91Pbb8OW8TL.__AC_SX300_SY300_QL70_FMwebp_.jpg"/>
+                  <h1 class="cat_name">{{ item.name }}</h1>
+                </div>
+              </div>
+            }
+          }
+          @else {
+            <p>{{ errorCat }}</p>
+          }
+        </div>
+    </div>
+</div>
